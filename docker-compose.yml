@@ -1,0 +1,10 @@
+services:
+  db:
+    image: mysql
+    container_name: jdbc_project
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
