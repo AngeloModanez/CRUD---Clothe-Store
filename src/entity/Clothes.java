@@ -1,12 +1,23 @@
-package model;
+package entity;
 
-public class Product {
+public class Clothes {
     private int id;
+    private int quantity;
     private String sku;
     private String description;
     private float price;
     private float maxDiscount;
-    private int quantity;
+
+    public Clothes() {
+    }
+
+    public Clothes(int quantity, String sku, String description, float price, float maxDiscount) {
+        this.quantity = quantity;
+        this.sku = sku;
+        this.description = description;
+        this.price = price;
+        this.maxDiscount = maxDiscount;
+    }
 
     public int getId() {
         return id;

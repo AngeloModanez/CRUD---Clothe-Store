@@ -1,7 +1,7 @@
 services:
   db:
     image: mysql
-    container_name: jdbc_project
+    container_name: jdbc_ClothesStore
     restart: always
     ports:
       - 3306:3306

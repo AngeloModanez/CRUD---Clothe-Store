@@ -14,8 +14,8 @@
       "server": "localhost",
       "port": 3306,
       "driver": "MySQL",
-      "name": "jdbc_clothesstore",
-      "database": "db_jdbc_clothesstore",
+      "database": "db_jdbc_ClothesStore",
+      "name": "ClothesStore",
       "username": "root",
       "askForPassword": true
     }
