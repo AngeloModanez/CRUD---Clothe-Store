@@ -16,7 +16,7 @@ public class ClothesDAO {
     public static void addClothes(Clothes clothes) {
         String sql = "INSERT INTO clothes (quantity, sku, description, price, max_discount) VALUES (?, ?, ?, ?, ?)";
 
-        try (Connection conn = DatabaseConection.gConnection();
+        try (Connection conn = DatabaseConection.getConnection();
                 PreparedStatement state = conn.prepareStatement(sql)) {
             state.setInt(1, clothes.getQuantity());
             state.setString(2, clothes.getSku());
@@ -34,7 +34,7 @@ public class ClothesDAO {
     public static void updateClothes(Clothes clothes) {
         String sql = "UPDATE clothes SET quantity = ?, sku = ?, description = ?, price = ?, max_discount = ? WHERE id = ?";
 
-        try (Connection conn = DatabaseConection.gConnection();
+        try (Connection conn = DatabaseConection.getConnection();
                 PreparedStatement state = conn.prepareStatement(sql)) {
 
             state.setInt(1, clothes.getQuantity());
@@ -55,7 +55,7 @@ public class ClothesDAO {
     public static void deleteClothes(int id) {
         String sql = "DELETE FROM clothes WHERE id = ?";
 
-        try (Connection conn = DatabaseConection.gConnection();
+        try (Connection conn = DatabaseConection.getConnection();
                 PreparedStatement state = conn.prepareStatement(sql)) {
             state.setInt(1, id);
 
@@ -71,7 +71,7 @@ public class ClothesDAO {
         List<Clothes> clothes = new ArrayList<>();
         String sql = "SELECT * FROM clothes";
 
-        try (Connection conn = DatabaseConection.gConnection();
+        try (Connection conn = DatabaseConection.getConnection();
                 Statement state = conn.createStatement();
                 ResultSet result = state.executeQuery(sql)) {
 

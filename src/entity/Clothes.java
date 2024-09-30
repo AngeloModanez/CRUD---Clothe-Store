@@ -32,6 +32,10 @@ public class Clothes {
         return id;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public String getSku() {
         return sku;
     }
@@ -46,9 +50,5 @@ public class Clothes {
 
     public float getMaxDiscount() {
         return maxDiscount;
-    }
-
-    public int getQuantity() {
-        return quantity;
     }
 }
