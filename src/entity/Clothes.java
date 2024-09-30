@@ -19,52 +19,36 @@ public class Clothes {
         this.maxDiscount = maxDiscount;
     }
 
-    public int getId() {
-        return id;
+    public Clothes(int id, int quantity, String sku, String description, float price, float maxDiscount) {
+        this.id = id;
+        this.quantity = quantity;
+        this.sku = sku;
+        this.description = description;
+        this.price = price;
+        this.maxDiscount = maxDiscount;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getId() {
+        return id;
     }
 
     public String getSku() {
         return sku;
     }
 
-    public void setSku(String sku) {
-        this.sku = sku;
-    }
-
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public float getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
     public float getMaxDiscount() {
         return maxDiscount;
-    }
-
-    public void setMaxDiscount(float maxDiscount) {
-        this.maxDiscount = maxDiscount;
     }
 
     public int getQuantity() {
         return quantity;
     }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
 }

@@ -5,9 +5,11 @@ import java.util.Scanner;
 import dao.ClothesDAO;
 import entity.Clothes;
 
-public class SaveMenu {
-    public static void show() {
-        Scanner in = new Scanner(System.in);
+public class UpdateMenu {
+    public static void show(Scanner in) {
+        System.out.print("\nEnter the Id of the product to be updated: ");
+        int id = in.nextInt();
+
         System.out.print("\nEnter the quantity: ");
         int quantity = in.nextInt();
 
@@ -23,7 +25,8 @@ public class SaveMenu {
         System.out.print("\nEnter the max discount: ");
         float maxDiscount = in.nextFloat();
 
-        Clothes clothes = new Clothes(quantity, sku, description, price, maxDiscount);
-        ClothesDAO.Create(clothes);
+        Clothes clothes = new Clothes(id, quantity, sku, description, price, maxDiscount);
+        ClothesDAO.updateClothes(clothes);
     }
+
 }

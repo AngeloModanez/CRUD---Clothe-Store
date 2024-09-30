@@ -1,9 +1,7 @@
 package main;
 
 import java.util.Scanner;
-import menu.ClothesMenu;
-import menu.ListMenu;
-import menu.SaveMenu;
+import menu.*;
 
 public class Main {
 	public static void main(String[] args) {
@@ -15,10 +13,14 @@ public class Main {
 
 			switch (option) {
 				case 1:
-					SaveMenu.show();
+					AddMenu.show(in);
 					break;
 				case 2:
+					UpdateMenu.show(in);
+					break;
 				case 3:
+					DeleteMenu.show(in);
+					break;
 				case 4:
 					ListMenu.show();
 					break;
@@ -27,7 +29,7 @@ public class Main {
 					in.close();
 					return;
 				default:
-					System.out.println("\nEnter a valid Option");
+					System.out.println("\nEnter a valid Option!");
 					break;
 			}
 		}
