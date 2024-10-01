@@ -4,20 +4,5 @@
   "java.project.referencedLibraries": [
     "lib/**/*.jar"
   ],
-  "sqltools.connections": [
-    {
-      "mysqlOptions": {
-        "authProtocol": "default",
-        "enableSsl": "Disabled"
-      },
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 3306,
-      "driver": "MySQL",
-      "database": "db_jdbc_ClothesStore",
-      "name": "ClothesStore",
-      "username": "root",
-      "askForPassword": true
-    }
-  ]
+  "sqltools.connections": []
 }

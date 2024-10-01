@@ -45,7 +45,7 @@ public class ClothesDAO {
             state.setInt(6, clothes.getId());
 
             state.executeUpdate();
-            System.out.println("Clothes successfully updated!");
+            System.out.println("\nClothes successfully updated!");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -60,7 +60,7 @@ public class ClothesDAO {
             state.setInt(1, id);
 
             state.executeUpdate();
-            System.out.println("Clothes successfully deleted!");
+            System.out.println("\nClothes successfully deleted!");
 
         } catch (SQLException e) {
             e.printStackTrace();

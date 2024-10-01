@@ -9,7 +9,7 @@ public class ListMenu {
     public static void show() {
         List<Clothes> clothes = ClothesDAO.getAllClothes();
         if (clothes.isEmpty()) {
-            System.out.println("The List is Empty");
+            System.out.print("\nThe List is Empty!");
             return;
         }
 

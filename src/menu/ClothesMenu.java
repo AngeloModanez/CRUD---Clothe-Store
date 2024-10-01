@@ -2,7 +2,7 @@ package menu;
 
 public class ClothesMenu {
     public static void show() {
-        System.out.println("\n\n+---------------------+");
+        System.out.println("\n+---------------------+");
         System.out.println("| Select an Option:   |");
         System.out.println("+ [1] Add new Clothes +");
         System.out.println("| [2] Update Clothes  |");
